@@ -1,0 +1,26 @@
+server:
+  port: 8081
+logging:
+  org:
+    springframework:
+      security: TRACE
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/USERSDB
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: user
+      password: test@123456
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
